@@ -7,7 +7,7 @@ import Feedback from "../components/Feedback";
 
 // 🔹 Constants
 const MAX_SESSION_MS = 15 * 60 * 1000; // 15 minutes
-const INACTIVITY_THRESHOLD_MS = 60 * 1000; // 1 minutes
+const INACTIVITY_THRESHOLD_MS = 60 * 1000; // 1 minute
 const INACTIVITY_RESPONSE_MS = 25000; // 25 seconds
 const INACTIVITY_PROMPT_LIMIT = 1;
 
@@ -283,8 +283,8 @@ const Interview = ({ user, sessionId }) => {
       // Reset silence timer every time speech is detected
       clearTimeout(silenceTimer);
       silenceTimer = setTimeout(() => {
-        rec.stop();  // auto-stop after 3s of silence
-      }, 3000);
+        rec.stop();  // auto-stop after 2s of silence
+      }, 2000);
     };
 
     rec.onend = () => {
