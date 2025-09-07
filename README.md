@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Interview App – Voice-Based Mock Interview Platform  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web app that simulates real product management interviews.  
+The system acts as the interviewer, asks questions, listens to the candidate’s answers, and continues the conversation naturally.  
+At the end, it provides feedback and stores the performance score.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
+- 🎙️ Voice-based Q&A (not just text input)  
+- 🤖 AI-driven interviewer flow  
+- 📊 Feedback & scoring system  
+- 🔑 Google Authentication with Firebase  
+- 🌐 Deployed on Vercel  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
+- **Frontend:** React.js, TailwindCSS  
+- **Voice Processing:** Web Speech API (speech-to-text, text-to-speech)  
+- **Authentication:** Firebase (Google Login)  
+- **Deployment:** Vercel  
+- **Other Tools:** Git, GitHub  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ⚙️ Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/interview-app.git
+   cd interview-app
+   ```
 
-### `npm run build`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Create a .env file in the root with your Firebase keys:**
+   ```bash
+   REACT_APP_FIREBASE_API_KEY=your_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_app_id
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Run development server**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎨 Design Decisions
+- Chose Firebase Auth for easy and secure login.  
+- Used Web Speech API for natural voice interaction.  
+- Opted for React + TailwindCSS to build a fast, responsive UI.  
+- Deployed on Vercel for instant sharing and testing.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔮 Next Steps (if given more time)
+- Add different interview roles (e.g., tech, HR, behavioral).  
+- Enhance feedback with analytics dashboards.  
+- Save interview transcripts for practice review.  
+- Add multi-language support.  
+- Enable video interview mode.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+- **Author:** Uday Goyal  
+- **Email:** udaygoyal456@gmail.com  
+- **Phone:** +91 9354441466  
+- **Portfolio:** [My Portfolio](https://udaygoyal.vercel.app/)  
