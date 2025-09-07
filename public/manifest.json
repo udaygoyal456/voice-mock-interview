@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MockInterview",
+  "name": "Voice-Based Mock Interview App",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0d6efd",
+  "background_color": "#ffffff",
+  "description": "An AI-powered voice-based mock interview app that simulates realistic interviews, provides feedback, and saves scores securely."
 }
