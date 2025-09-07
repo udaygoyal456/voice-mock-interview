@@ -263,23 +263,32 @@ const Interview = ({ user, sessionId }) => {
     const rec = new SpeechRecognition();
     recognitionRef.current = rec;
     rec.lang = "en-US";
-    rec.continuous = false;   // stop automatically when user pauses
+    rec.continuous = true;   // keep listening
     rec.interimResults = true;
     rec.maxAlternatives = 1;
 
     setListening(true);
 
     let finalTranscript = "";
+    let silenceTimer;
 
     rec.onresult = (ev) => {
       for (let i = ev.resultIndex; i < ev.results.length; i++) {
+        const transcript = ev.results[i][0].transcript;
         if (ev.results[i].isFinal) {
-          finalTranscript += ev.results[i][0].transcript + " ";
+          finalTranscript += transcript + " ";
         }
       }
+
+      // Reset silence timer every time speech is detected
+      clearTimeout(silenceTimer);
+      silenceTimer = setTimeout(() => {
+        rec.stop();  // auto-stop after 3s of silence
+      }, 3000);
     };
 
     rec.onend = () => {
+      clearTimeout(silenceTimer);
       setListening(false);
       if (finalTranscript.trim()) {
         finalizeTurn(finalTranscript.trim());
