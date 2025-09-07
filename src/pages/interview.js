@@ -7,7 +7,7 @@ import Feedback from "../components/Feedback";
 
 // 🔹 Constants
 const MAX_SESSION_MS = 15 * 60 * 1000; // 15 minutes
-const INACTIVITY_THRESHOLD_MS = 2 * 60 * 1000; // 2 minutes
+const INACTIVITY_THRESHOLD_MS = 60 * 1000; // 1 minutes
 const INACTIVITY_RESPONSE_MS = 25000; // 25 seconds
 const INACTIVITY_PROMPT_LIMIT = 1;
 
